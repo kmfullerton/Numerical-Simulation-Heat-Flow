@@ -1,0 +1,1 @@
+function [c1, c2, value] = Calc_Second_Derivatives(xim1, xi, xip1, fim1, fi, fip1, ddfim1)c1 = 2*(xip1 - xim1);c2 = xip1 - xi;value = ((6/(xip1 - xi))*(fip1-fi)) + ((6/(xi-xim1))*(fim1-fi)) - ((xi-xim1)*ddfim1);

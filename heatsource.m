@@ -1,0 +1,1 @@
+function Q = heatsource (x,t)% Heat Source Function% Inputs: x = location along rod, t = time% Outputs: Q = heat from sunif ((x >= 0) && (x < 0.3))  Q = 0;  else   Q = 200 * sin(pi*((x-0.3)/0.7)) * abs(sin((pi/2)*t)*sin(((3*pi)/2)*t));  endif    endfunction 

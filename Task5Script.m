@@ -1,0 +1,1 @@
+% Task 5 Script% Note: Must run Finite Difference Script before running Task 5 Scriptl = length(tvec);for i = 1:l  q(i) = (1/deltax)*(T(i,2) - T(i,1));endforplot(tvec, q,'.')grid onxlabel('Time (s)')ylabel('Heat Flow ')saveas(1,'task5fig.png')
